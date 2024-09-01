@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website | Portfolio.</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Linking to import some icons -->
+    <script src="https://kit.fontawesome.com/3e4dddc1db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- --------------------Home------------------ -->
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo"><span>P</span>ortfolio.</a>
+                <ul id="sidemenu">
+                    <li><a href="#header" id="active" style="--i: 1">Home</a></li>
+                    <li><a href="#about" style="--i: 2">About</a></li>
+                    <li><a href="#skills" style="--i: 3">Skills</a></li>
+                    <li><a href="#portfolio" style="--i: 4">Portfolio</a></li>
+                    <li><a href="#contact" style="--i: 5">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="part-1">Front-end Developer</p>
+                <h1 class="part-2">Hi, I'm <span>Anup</span><br> Bhar From India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------ABOUT-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/13.jpg" alt="Anup">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;I am Anup Bhar, a dedicated student currently pursuing a Bachelors degree in Computer Science and Engineering at Hooghly Engineering and Technology College, Pipulpati, Hooghly. Entering my fourth year of study, I am eager to augment my academic pursuits with practical industrial experience.<br>&nbsp;&nbsp;&nbsp;&nbsp;I am an enthusiastic Web Developer with a strong foundation in HTML and CSS, currently honing my skills in JavaScript as I embark on a project endeavor. Additionally, I possess proficiency in C programming, Data Structures and Algorithms (DSA), SQL, Database Management Systems (DBMS), Computer Networks, and Object-Oriented Programming (OOP) in Java. I am driven by a continuouslearning mindset and am poised to delve into the realms of Artificial Intelligence and Machine Learning (AI-ML) in the near future.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Dev</span><br>Front-end Web Development (HTML,CSS,JS)</li>
+                            <li><span>C/C++</span><br>Proficient in C/C++ coding having knowledge of DSA</li>
+                            <li><span>DBMS</span><br>Know Database Management System (SQL)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Currently, I am a fresher and am eager to augment my academic pursuits with practical industrial experience.</li>
+                            <li><span>Internship</span><br>With a keen interest in web development, I am actively seeking internship opportunities to immerse myself in real-world scenarios and expand my industrial knowledge base.</li>
+                            <li><span>Codsoft</span><br>I'm completing my Web Development internship (Aug, 2024)recently</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Btech Degree at Hooghly Engineering and Technology College<br>(8.87 CGPA upto 6th sem)</li>
+                            <li><span>2020-2021</span><br>Completed Class 12th from Dhaniakhali Mahamaya Vidyamandir (WBCHSE Board)<br>(90.20%)</li>
+                            <li><span>2018-2019</span><br>Completed Class 10th from Dhaniakhali Mahamaya Vidyamandir (WBBSE Board)<br>(92.71%)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------SKILLS--------------- -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Web development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil a sequi earum, dolore facilis reprehenderit magni quo doloribus natus. Soluta.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-keyboard"></i>
+                    <h2>Proficient in C/C++</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil a sequi earum, dolore facilis reprehenderit magni quo doloribus natus. Soluta.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management System</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil a sequi earum, dolore facilis reprehenderit magni quo doloribus natus. Soluta.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------PORTFOLIO------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image1.avif" alt="Web development Project">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>I've created a small working calculator using HTML, CSS & Javascript. This is just a start. I'm going to create something special in the near future including my AI-ML knowledge.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image2.avif" alt="C/C++ coding">
+                    <div class="layer">
+                        <h3>The Perfect Guessing game</h3>
+                        <p>I've created some playable cool games using python. Tic-Tac-Toe, Stone-Paper-Scissor, The Perfect Guessing, Snake game are the highlights of my creation.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image3.avif" alt="SQL">
+                    <div class="layer">
+                        <h3>Implementation</h3>
+                        <p>I've worked on several datasets in recent past to bring out some fruitful outputs from the given dataset using the Structured Query Language(SQL).</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- ---------------------------CONTACT------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>anupbhar341@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+918101804748</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/bhar-anup/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/anupbhar341" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/+918101804748" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/anup.bhar.315" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_anupbhar.341_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/My resume.pdf" download class="btn btn1">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message for Me"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Anup. Made with <i class="fa-solid fa-heart"> </i> by Anup</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right='0';
+        }
+        function closemenu(){
+            sidemenu.style.right='-200px';
+        }
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzhLT3gou5VKNVUdgqt_0GqPYkQl5U7HH1T1DeI0Ojs-ns5TDlTXEpS9-e9Kx4zq6XRHA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+           // Show the message immediately
+            msg.innerHTML = "Submitting...";
+  
+            // Proceed with form submission via fetch
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully :)"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },2000)
+                form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
+
+</html>
